@@ -1,0 +1,114 @@
+.about {
+
+    padding: 100px 70px;
+
+    background: #120708;
+
+    color: #f5e6e8;
+
+}
+
+
+
+.about-content {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+
+.about-label {
+
+    color: #c98282;
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.about h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 60px;
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.about-description {
+
+    color: #d8a7a7;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* Statistics */
+
+
+.stats {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 70px;
+
+}
+
+
+
+.stat-card {
+
+    width: 250px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border: 1px solid rgba(216,167,167,0.3);
+
+}
+
+
+
+.stat-card h3 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 50px;
+
+    color: #c98282;
+
+}
+
+
+
+.stat-card p {
+
+    color: #d8a7a7;
+
+    margin-top: 10px;
+
+}

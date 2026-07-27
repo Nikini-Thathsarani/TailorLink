@@ -6,11 +6,12 @@ const Footer = () => {
     <footer className="footer">
 
       <h2>
-        TailorLink
+        TAILORLINK
       </h2>
 
       <p>
-        Connecting customers with skilled tailors.
+        Connecting customers with skilled tailors and bringing
+        unique designs to life.
       </p>
 
       <p>

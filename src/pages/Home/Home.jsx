@@ -1,21 +1,17 @@
 import React from "react";
+import Hero from "../../components/ui/Hero/Hero";
+import About from "../../components/ui/About/About";
 
 
 const Home = () => {
 
     return (
-        <div>
-
-            <h1>
-                Find Your Perfect Tailor
-            </h1>
-
-            <p>
-                Discover professional tailors near you and create your dream outfit.
-            </p>
-
-        </div>
+        <>
+            <Hero />
+            <About />
+        </>
     );
+
 };
 
 
