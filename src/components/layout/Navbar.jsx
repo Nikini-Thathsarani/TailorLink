@@ -5,29 +5,42 @@ const Navbar = () => {
   return (
     <nav className="navbar">
 
+      {/* Logo */}
       <div className="logo">
-        Tailor<span>Link</span>
+        TAILOR<span>LINK</span>
       </div>
 
+
+      {/* Navigation Links */}
       <ul className="nav-links">
-        <li>Home</li>
-        <li>Find Tailors</li>
-        <li>Bookings</li>
-        <li>About</li>
+
+        <li>HOME</li>
+        <li>TAILORS</li>
+        <li>SERVICES</li>
+        <li>HOW IT WORKS</li>
+        <li>ABOUT</li>
+
       </ul>
 
-      <div className="nav-buttons">
+
+      {/* Buttons */}
+      <div className="nav-actions">
+
         <button className="login-btn">
-          Login
+          LOGIN
         </button>
 
-        <button className="signup-btn">
-          Sign Up
+
+        <button className="create-btn">
+          LET'S CREATE →
         </button>
+
       </div>
+
 
     </nav>
   );
 };
+
 
 export default Navbar;

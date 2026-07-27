@@ -1,6 +1,39 @@
 .footer {
+
+    padding: 60px 70px;
+
+    background: #120708;
+
+    color: #f5e6e8;
+
+    border-top: 1px solid rgba(216,167,167,0.2);
+
     text-align: center;
-    padding: 30px;
-    background: #111827;
-    color: white;
+
+}
+
+
+.footer h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 40px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.footer p {
+
+    color: #d8a7a7;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+    margin: 10px 0;
+
 }
