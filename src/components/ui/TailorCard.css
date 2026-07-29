@@ -1,0 +1,56 @@
+.tailor-card {
+
+    width:300px;
+
+    background:#1b0d0f;
+
+    overflow:hidden;
+
+    border:1px solid rgba(216,167,167,0.2);
+
+}
+
+
+.tailor-card img {
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+}
+
+
+.tailor-info {
+
+    padding:25px;
+
+}
+
+
+.tailor-info h3 {
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:30px;
+
+    color:#f5e6e8;
+
+}
+
+
+.tailor-info p {
+
+    color:#d8a7a7;
+
+    margin:10px 0;
+
+}
+
+
+.tailor-info span {
+
+    color:#c98282;
+
+}
