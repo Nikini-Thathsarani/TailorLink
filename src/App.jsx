@@ -1,23 +1,24 @@
-import React from "react";
+import AppRoutes from "./routes/AppRoutes";
+import { Routes, Route } from "react-router-dom";
 import MainLayout from "./components/layout/MainLayout";
 import Home from "./pages/Home/Home";
-import AppRoutes from "./routes/AppRoutes";
-
 
 function App() {
-
   return (
-
-    <MainLayout>
-
-        <Home />
-        <AppRoutes />
-
-    </MainLayout>
-
+    <Routes>
+      <Route 
+        path="/" 
+        element={
+          <MainLayout>
+            <Home />
+          </MainLayout>
+        } 
+      />
+    </Routes>
   );
-
 }
 
-
 export default App;
+
+
+
