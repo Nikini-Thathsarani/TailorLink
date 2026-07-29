@@ -1,6 +1,7 @@
 import React from "react";
 import MainLayout from "./components/layout/MainLayout";
 import Home from "./pages/Home/Home";
+import AppRoutes from "./routes/AppRoutes";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <MainLayout>
 
         <Home />
+        <AppRoutes />
 
     </MainLayout>
 
