@@ -1,0 +1,40 @@
+.featured {
+
+    padding:100px 70px;
+
+    background:#120708;
+
+    text-align:center;
+
+}
+
+
+.section-label {
+
+    color:#c98282;
+
+    letter-spacing:4px;
+
+}
+
+
+
+.featured h2 {
+
+    font-size:60px;
+
+    margin:25px 0 60px;
+
+}
+
+
+
+.tailor-container {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
