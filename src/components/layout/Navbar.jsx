@@ -1,46 +1,29 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
+import Button from "../ui/Button/Button";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-
-      {/* Logo */}
+    <header className="navbar">
       <div className="logo">
-        TAILOR<span>LINK</span>
+        Tailor<span>Link</span>
       </div>
 
+      <nav>
+        <ul className="nav-links">
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/tailors">Tailors</NavLink></li>
+          <li><NavLink to="/services">Services</NavLink></li>
+          <li><NavLink to="/about">About</NavLink></li>
+        </ul>
+      </nav>
 
-      {/* Navigation Links */}
-      <ul className="nav-links">
-
-        <li>HOME</li>
-        <li>TAILORS</li>
-        <li>SERVICES</li>
-        <li>HOW IT WORKS</li>
-        <li>ABOUT</li>
-
-      </ul>
-
-
-      {/* Buttons */}
-      <div className="nav-actions">
-
-        <button className="login-btn">
-          LOGIN
-        </button>
-
-
-        <button className="create-btn">
-          LET'S CREATE →
-        </button>
-
+      <div className="nav-buttons">
+        <Button variant="outline">Login</Button>
+        <Button variant="primary">Register</Button>
       </div>
-
-
-    </nav>
+    </header>
   );
 };
-
 
 export default Navbar;
