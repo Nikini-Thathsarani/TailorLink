@@ -1,0 +1,34 @@
+.button {
+  padding: 12px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: all .3s ease;
+}
+
+/* Login */
+
+.button.outline {
+  background: transparent;
+  border: 1px solid #c98282;
+  color: white;
+}
+
+.button.outline:hover {
+  background: #c98282;
+}
+
+/* Register */
+
+.button.primary {
+  background: #c98282;
+  border: 1px solid #c98282;
+  color: white;
+}
+
+.button.primary:hover {
+  background: #a65b5b;
+}
