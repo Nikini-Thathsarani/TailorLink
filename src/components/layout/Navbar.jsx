@@ -24,9 +24,10 @@ const Navbar = () => {
 
       {/* Buttons */}
       <div className="nav-actions">
-        <Button variant="outline">Login</Button>
-        <Button variant="primary">Register</Button>
-      </div>
+  <Button variant="outline">Login</Button>
+
+  <Button variant="primary">Register</Button>
+</div>
     </header>
   );
 };
