@@ -19,10 +19,9 @@
 ================================= */
 
 .logo {
-  font-size: 2rem;
+  font-size: 30px;
   font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 1px;
+  color: white;
 }
 
 .logo span {
@@ -65,5 +64,5 @@
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 16px;
 }
