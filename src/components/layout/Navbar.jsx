@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Button from "../ui/Button/Button";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -23,10 +24,16 @@ const Navbar = () => {
       </nav>
 
       {/* Buttons */}
-      <div className="nav-actions">
-  <Button variant="outline">Login</Button>
+     <div className="nav-actions">
 
-  <Button variant="primary">Register</Button>
+    <Link to="/login" className="login-nav-btn">
+        LOGIN
+    </Link>
+
+    <button className="create-btn">
+        LET'S CREATE →
+    </button>
+
 </div>
     </header>
   );
