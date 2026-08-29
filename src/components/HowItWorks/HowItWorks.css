@@ -1,0 +1,131 @@
+.how-it-works {
+
+    padding: 120px 80px;
+
+    background: #120708;
+
+    color: #f5e6e8;
+
+}
+
+
+.how-heading {
+
+    max-width: 700px;
+
+    margin: 0 auto 80px;
+
+    text-align: center;
+
+}
+
+
+.how-heading .section-label {
+
+    color: #c98282;
+
+    margin-bottom: 18px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+}
+
+
+.how-heading h2 {
+
+    margin: 0 0 20px;
+
+    font-family: Georgia, serif;
+
+    font-size: 52px;
+
+    font-weight: 400;
+
+}
+
+
+.how-heading > p:last-child {
+
+    max-width: 580px;
+
+    margin: auto;
+
+    color: #bfa9aa;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+.steps-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+}
+
+
+.step {
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 40px;
+
+    padding: 35px 0;
+
+    border-bottom: 1px solid rgba(201, 130, 130, 0.2);
+
+}
+
+
+.step:first-child {
+
+    border-top: 1px solid rgba(201, 130, 130, 0.2);
+
+}
+
+
+.step-number {
+
+    color: #c98282;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.step-content h3 {
+
+    margin: 0 0 12px;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    font-weight: 400;
+
+}
+
+
+.step-content p {
+
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #bfa9aa;
+
+    line-height: 1.7;
+
+}
