@@ -1,78 +1,123 @@
 import React from "react";
-import TailorCard from "../ui/TailorCard";
 import "./FeaturedTailors.css";
 
-
 const FeaturedTailors = () => {
+    return (
+        <section className="featured-tailors">
+
+            <div className="featured-heading">
+
+                <p className="section-label">
+                    FEATURED TAILORS
+                </p>
+
+                <h2>
+                    Meet Our Skilled Tailors
+                </h2>
+
+                <p className="section-description">
+                    Discover talented tailors who can bring your
+                    ideas and personal style to life.
+                </p>
+
+            </div>
 
 
-const tailors = [
+            <div className="tailor-grid">
 
-{
-name:"Ayesha Bridal Studio",
-location:"Colombo",
-rating:"4.9",
-image:"https://images.unsplash.com/photo-1556740749-887f6717d7e4"
-},
+                <div className="tailor-card">
 
+                    <div className="tailor-image">
+                        <div className="image-placeholder">
+                            Tailor
+                        </div>
+                    </div>
 
-{
-name:"Royal Stitch",
-location:"Kandy",
-rating:"4.8",
-image:"https://images.unsplash.com/photo-1525507119028-ed4c629a60a3"
-},
+                    <div className="tailor-details">
 
+                        <h3>
+                            Ayesha Studio
+                        </h3>
 
-{
-name:"Elegant Fashion",
-location:"Galle",
-rating:"5.0",
-image:"https://images.unsplash.com/photo-1558769132-cb1aea458c5e"
-}
+                        <p>
+                            Colombo
+                        </p>
 
-];
+                        <span className="rating">
+                            ★ 4.9
+                        </span>
 
+                    </div>
 
-return (
-
-<section className="featured">
+                </div>
 
 
-<p className="section-label">
-FEATURED TAILORS
-</p>
+                <div className="tailor-card">
+
+                    <div className="tailor-image">
+                        <div className="image-placeholder">
+                            Tailor
+                        </div>
+                    </div>
+
+                    <div className="tailor-details">
+
+                        <h3>
+                            Royal Stitch
+                        </h3>
+
+                        <p>
+                            Kandy
+                        </p>
+
+                        <span className="rating">
+                            ★ 4.8
+                        </span>
+
+                    </div>
+
+                </div>
 
 
-<h2>
-Meet Our Skilled Creators
-</h2>
+                <div className="tailor-card">
+
+                    <div className="tailor-image">
+                        <div className="image-placeholder">
+                            Tailor
+                        </div>
+                    </div>
+
+                    <div className="tailor-details">
+
+                        <h3>
+                            Elegant Threads
+                        </h3>
+
+                        <p>
+                            Galle
+                        </p>
+
+                        <span className="rating">
+                            ★ 5.0
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
 
 
-<div className="tailor-container">
+            <div className="featured-action">
 
+                <button>
+                    View All Tailors →
+                </button>
 
-{
-tailors.map((tailor,index)=>(
+            </div>
 
-<TailorCard
-key={index}
-{...tailor}
-/>
-
-))
-}
-
-
-</div>
-
-
-</section>
-
-);
-
-
+        </section>
+    );
 };
-
 
 export default FeaturedTailors;

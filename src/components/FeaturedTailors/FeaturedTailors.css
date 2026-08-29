@@ -1,40 +1,213 @@
-.featured {
+.featured-tailors {
 
-    padding:100px 70px;
+    padding: 110px 80px;
 
-    background:#120708;
+    background: #120708;
 
-    text-align:center;
+    color: #f5e6e8;
+
+}
+
+
+.featured-heading {
+
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
 
 }
 
 
 .section-label {
 
-    color:#c98282;
+    margin-bottom: 18px;
 
-    letter-spacing:4px;
+    color: #c98282;
 
-}
+    font-size: 12px;
 
+    font-weight: 600;
 
-
-.featured h2 {
-
-    font-size:60px;
-
-    margin:25px 0 60px;
+    letter-spacing: 4px;
 
 }
 
 
+.featured-heading h2 {
 
-.tailor-container {
+    margin: 0 0 20px;
 
-    display:flex;
+    font-family: Georgia, serif;
 
-    justify-content:center;
+    font-size: 52px;
 
-    gap:30px;
+    font-weight: 400;
+
+}
+
+
+.section-description {
+
+    max-width: 560px;
+
+    margin: 0 auto;
+
+    color: #bfa9aa;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+.tailor-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+
+.tailor-card {
+
+    background: #1b0c0f;
+
+    border: 1px solid rgba(201, 130, 130, 0.18);
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease,
+                border-color 0.3s ease;
+
+}
+
+
+.tailor-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #c98282;
+
+}
+
+
+.tailor-image {
+
+    height: 360px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #32151a,
+            #651f2a
+        );
+
+}
+
+
+.image-placeholder {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: rgba(245, 230, 232, 0.5);
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+}
+
+
+.tailor-details {
+
+    padding: 24px;
+
+}
+
+
+.tailor-details h3 {
+
+    margin: 0 0 8px;
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+
+    font-weight: 400;
+
+}
+
+
+.tailor-details p {
+
+    margin: 0;
+
+    color: #bfa9aa;
+
+}
+
+
+.rating {
+
+    display: block;
+
+    margin-top: 15px;
+
+    color: #d78b91;
+
+    font-size: 14px;
+
+}
+
+
+.featured-action {
+
+    margin-top: 50px;
+
+    text-align: center;
+
+}
+
+
+.featured-action button {
+
+    padding: 13px 28px;
+
+    border: 1px solid #c98282;
+
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: #f5e6e8;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+.featured-action button:hover {
+
+    background: #c98282;
+
+    color: #120708;
 
 }
