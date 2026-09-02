@@ -30,9 +30,9 @@ const Navbar = () => {
         LOGIN
     </Link>
 
-    <button className="create-btn">
+    <Link to="/register" className="create-btn">
         LET'S CREATE →
-    </button>
+    </Link>
 
 </div>
     </header>
