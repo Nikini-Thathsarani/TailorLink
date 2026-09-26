@@ -1,9 +1,71 @@
 import React, { useState } from "react";
 import "./Login.css";
 
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../firebase/firebaseConfig";
+
 const Login = () => {
 
     const [showPassword, setShowPassword] = useState(false);
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const [error, setError] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    const handleLogin = async (e) => {
+
+        e.preventDefault();
+
+        setError("");
+
+        try {
+
+            setLoading(true);
+
+            await signInWithEmailAndPassword(
+                auth,
+                email,
+                password
+            );
+
+            // Login successful
+            window.location.href = "/";
+
+        } catch (error) {
+
+            console.error("Login error:", error);
+
+            if (error.code === "auth/invalid-credential") {
+
+                setError("Incorrect email or password.");
+
+            } else if (error.code === "auth/user-not-found") {
+
+                setError("No account found with this email.");
+
+            } else if (error.code === "auth/wrong-password") {
+
+                setError("Incorrect password.");
+
+            } else if (error.code === "auth/invalid-email") {
+
+                setError("Please enter a valid email address.");
+
+            } else {
+
+                setError("Login failed. Please try again.");
+
+            }
+
+        } finally {
+
+            setLoading(false);
+
+        }
+    };
+
 
     return (
         <div className="login-page">
@@ -21,7 +83,10 @@ const Login = () => {
                 </div>
 
 
-                <form className="login-form">
+                <form
+                    className="login-form"
+                    onSubmit={handleLogin}
+                >
 
                     <div className="form-group">
 
@@ -30,6 +95,10 @@ const Login = () => {
                         <input
                             type="email"
                             placeholder="Enter your email"
+                            value={email}
+                            onChange={(e) =>
+                                setEmail(e.target.value)
+                            }
                             required
                         />
 
@@ -51,8 +120,16 @@ const Login = () => {
                         <div className="password-input">
 
                             <input
-                                type={showPassword ? "text" : "password"}
+                                type={
+                                    showPassword
+                                        ? "text"
+                                        : "password"
+                                }
                                 placeholder="Enter your password"
+                                value={password}
+                                onChange={(e) =>
+                                    setPassword(e.target.value)
+                                }
                                 required
                             />
 
@@ -62,7 +139,9 @@ const Login = () => {
                                     setShowPassword(!showPassword)
                                 }
                             >
-                                {showPassword ? "Hide" : "Show"}
+                                {showPassword
+                                    ? "Hide"
+                                    : "Show"}
                             </button>
 
                         </div>
@@ -79,11 +158,21 @@ const Login = () => {
                     </label>
 
 
+                    {error && (
+                        <p className="form-error">
+                            {error}
+                        </p>
+                    )}
+
+
                     <button
                         type="submit"
                         className="login-button"
+                        disabled={loading}
                     >
-                        Login
+                        {loading
+                            ? "Logging in..."
+                            : "Login"}
                     </button>
 
 
@@ -91,7 +180,7 @@ const Login = () => {
 
                         Don't have an account?
 
-                        <a href="#">
+                        <a href="/register">
                             Create an account
                         </a>
 
