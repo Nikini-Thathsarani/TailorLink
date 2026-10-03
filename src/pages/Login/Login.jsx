@@ -31,7 +31,7 @@ const Login = () => {
             );
 
             // Login successful
-            window.location.href = "/";
+            window.location.href = "/customer-dashboard";
 
         } catch (error) {
 
