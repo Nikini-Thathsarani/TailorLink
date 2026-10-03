@@ -1,0 +1,136 @@
+.booking-page {
+    min-height: 100vh;
+    padding: 80px 20px;
+    background: #120708;
+    color: #f5e6e8;
+}
+
+.booking-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.booking-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.booking-label {
+    color: #c98282;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.booking-header h1 {
+    margin: 0 0 15px;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.booking-header p:last-child {
+    max-width: 550px;
+    margin: 0 auto;
+    color: #bfa9aa;
+    line-height: 1.7;
+}
+
+.booking-form {
+    padding: 40px;
+    background: #1b0c0f;
+    border: 1px solid rgba(201, 130, 130, 0.2);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 14px;
+    color: #f5e6e8;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    border: 1px solid rgba(201, 130, 130, 0.3);
+    background: #120708;
+    color: #f5e6e8;
+    font-family: inherit;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #c98282;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.booking-button {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #c98282;
+    border-radius: 30px;
+    background: #c98282;
+    color: #120708;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.booking-button:hover {
+    background: #f5e6e8;
+}
+
+.booking-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.booking-error {
+    margin-bottom: 20px;
+    color: #e58d8d;
+}
+
+.booking-success {
+    margin-bottom: 20px;
+    color: #9ed6a5;
+}
+
+@media (max-width: 600px) {
+
+    .booking-page {
+        padding: 50px 15px;
+    }
+
+    .booking-header h1 {
+        font-size: 38px;
+    }
+
+    .booking-form {
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
