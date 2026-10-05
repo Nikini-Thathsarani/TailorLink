@@ -7,9 +7,8 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Tailors from "./pages/Tailors/Tailors";
 import Register from "./pages/Register/Register";
-
-// Added
 import CustomerDashboard from "./pages/CustomerDashboard/CustomerDashboard";
+import TailorDashboard from "./pages/TailorDashboard/TailorDashboard";
 import Booking from "./pages/Booking/Booking";
 
 
@@ -52,6 +51,12 @@ function App() {
             <Route
                 path="/customer-dashboard"
                 element={<CustomerDashboard />}
+            />
+
+            {/* Tailor Dashboard */}
+            <Route
+                path="/tailor-dashboard"
+                element={<TailorDashboard />}
             />
 
             {/* Booking */}
