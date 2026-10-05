@@ -128,9 +128,12 @@ const Dashboard = () => {
                 Your upcoming appointments will appear here.
               </p>
 
-              <button className="outline-button">
-                Book an Appointment
-              </button>
+             <button
+    className="outline-button"
+    onClick={() => window.location.href = "/booking"}
+>
+    Book an Appointment
+</button>
             </div>
           </div>
 
